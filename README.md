@@ -1,7 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # Ronak - Ask Me Anything
 
 A single-page chat app that lets visitors ask questions about Ronak Vimal. The UI presents a profile panel on the left and a chat interface on the right. Under the hood, the app calls Groq's LLM to classify each message as personal vs. general. Personal questions trigger a tool call that pulls facts from `data/profile.json`, while non-personal questions are answered directly by the model. Messages render with Markdown and GitHub-flavored markdown support.
