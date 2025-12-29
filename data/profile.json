@@ -1,0 +1,208 @@
+{
+  "name": "Ronak Vimal",
+  "email": "ronakvimal2003@gmail.com",
+  "age": "22",
+  "date_of_birth": "July 29, 2003",
+  "personality": [
+    "ENFP-T (Extraverted, iNtuitive, Feeling, Prospecting) - Turbulent Campaigner",
+  "Regardless of their Identities, Campaigners are always free spirits with a deep desire to connect with others",
+  "More anxiety, self-consciousness, perfectionism, and emotional volatility than ENFP-A",
+  "Enthusiastic, creative, sociable, empathetic, idealistic, and focused on possibilities and personal growth.",
+  "Deep emotional depth, high adaptability, strong communication, and a powerful drive for improvement, often making them great friends and motivators",
+  "Can struggle with insecurity, people-pleasing, codependency, and overthinking, especially in relationships"],
+  "address": "4700 Berwyn House Rd, College Park, Maryland, USA. Zip Code: 20740",
+  "family": {
+    "dad": "Pyar Vimal",
+    "mom": "Mini Vimal",
+    "younger_brother": "Gaurav Vimal"
+  },
+  "hometown": "Thiruvananthapuram, Kerala, India",
+  "languages": "English, Malayalam (Mother Tongue), Hindi",
+  "sexual_orientation": "Straight / Heterosexual",
+  "dating": "Yes, I have a girlfriend. Ongoing relationship for about 2 years.",
+  "religion": "Brought up a Hindu, but I'm more Agnostic",
+  "zodiac_sign": "Leo",
+  "education": {
+    "k-12": {
+      "school": "St. Thomas Central School till 10th grade, Sarvodaya Central Vidyalaya for 11th and 12th",
+      "location": "Thiruvananthapuram, Kerala, India"
+    },
+    "undergraduate": {
+      "degree": "Bachelor of Technology (B.Tech.)",
+      "major": "Electronics & Communication Engineering",
+      "school": "Indian Institute of Information Technology (IIIT) Jabalpur",
+      "location": "Jabalpur, Madhya Pradesh, India",
+      "program_duration": "December 2021 - June 2025",
+      "cpi": 8.8,
+      "courses": {
+  "first_semester": {
+    "sem1_courses": {
+      "NS1001": { "Course Title": "Mathematics-I", "Grade": "B+" },
+      "NS1002": { "Course Title": "Engineering Mechanics", "Grade": "A+" },
+      "HS1001": { "Course Title": "Effective Communications", "Grade": "B+" },
+      "IT1002": { "Course Title": "Introduction to Programming in Python", "Grade": "B+" },
+      "EC1001": { "Course Title": "Introduction to Profession", "Grade": "S" }
+    },
+    "spi": 8.6
+  },
+  "second_semester": {
+    "sem2_courses": {
+      "NS103a": { "Course Title": "ODE & PDE", "Grade": "B" },
+      "NS1004": { "Course Title": "Physics II", "Grade": "A" },
+      "HS1002": { "Course Title": "Indian Culture, Ethics and Human Values", "Grade": "B+" },
+      "ES1002": { "Course Title": "Basic Electronics", "Grade": "B+" },
+      "DS1005": { "Course Title": "Engineering Graphics", "Grade": "B+" }
+    },
+    "spi": 8.0
+  },
+  "third_semester": {
+    "sem3_courses": {
+      "EC2002": { "Course Title": "Digital Electronics and Microprocessor Interfacing", "Grade": "A" },
+      "EC203a": { "Course Title": "Principle of Analog Communications", "Grade": "C+" },
+      "EC203b": { "Course Title": "Network Theory (Analysis and Synthesis)", "Grade": "A+" },
+      "EC204a": { "Course Title": "Electronics Devices and Circuits", "Grade": "A" },
+      "EC204b": { "Course Title": "Instrumentation and Measurement", "Grade": "A" },
+      "IT2E01": { "Course Title": "IT Workshop I", "Grade": "B+" },
+      "IT2002": { "Course Title": "Data Structure in Python", "Grade": "B+" },
+      "OE2E01": { "Course Title": "Introduction to Sensors and Actuators", "Grade": "B+" },
+      "PC1001": { "Course Title": "Professional Development Course", "Grade": "A+" }
+    },
+    "spi": 8.5
+  },
+  "fourth_semester": {
+    "sem4_courses": {
+      "NS2001": { "Course Title": "Biology for Engineers", "Grade": "B+" },
+      "EC2005": { "Course Title": "Digital Signal Processing", "Grade": "A+" },
+      "EC2006": { "Course Title": "Control Systems", "Grade": "A+" },
+      "EC207a": { "Course Title": "AI and its application", "Grade": "A" },
+      "EC207b": { "Course Title": "Architecture of Cellular Systems", "Grade": "A" },
+      "EC2008": { "Course Title": "Analog Integrated Circuit", "Grade": "A+" },
+      "IT2E02": { "Course Title": "IT Workshop II", "Grade": "A+" },
+      "OE2E04": { "Course Title": "Introduction to Deep Learning", "Grade": "B+" },
+      "PC2002": { "Course Title": "Professional Development Course", "Grade": "B+" }
+    },
+    "spi": 9.4
+  },
+  "fifth_semester": {
+    "sem5_courses": {
+      "DS3001": { "Course Title": "Engineering Design Including Design and Fabrication Project", "Grade": "A" },
+      "EC3009": { "Course Title": "VLSI System Design (VLSI IC design, logic synthesis using VHDL)", "Grade": "A+" },
+      "EC3010": { "Course Title": "Fundamentals of Electromagnetic Theory", "Grade": "C+" },
+      "EC3011": { "Course Title": "Digital Communications", "Grade": "B+" },
+      "IT3E01": { "Course Title": "IT Workshop III", "Grade": "A+" },
+      "OE3E40": { "Course Title": "Computation Genomic & Proteomic", "Grade": "B" }
+    },
+    "spi": 8.3
+  },
+  "sixth_semester": {
+    "sem6_courses": {
+      "DS3014": { "Course Title": "Fabrication Project", "Grade": "A" },
+      "HS3004": { "Course Title": "Ecology and Environment Science", "Grade": "B" },
+      "ES1003": { "Course Title": "Innovation Theory and Practice", "Grade": "C+" },
+      "IT3E03": { "Course Title": "IT Workshop 4", "Grade": "O" },
+      "PC3003": { "Course Title": "Professional Development Course 3", "Grade": "B+" },
+      "PR2002": { "Course Title": "Discipline Project", "Grade": "A+" },
+      "CS8009": { "Course Title": "Image Processing", "Grade": "A" },
+      "CS8011": { "Course Title": "Machine Learning", "Grade": "A+" },
+      "OE3E15": { "Course Title": "Information Theory and Coding", "Grade": "B+" }
+    },
+    "spi": 8.7
+  },
+  "seventh_semester": {
+    "sem7_courses": {
+      "CS8004": { "Course Title": "Deep Learning and Applications", "Grade": "A" },
+      "EC3004": { "Course Title": "Pattern Recognition and Machine Learning", "Grade": "A" },
+      "EC8029": { "Course Title": "Advanced Digital Filter Design", "Grade": "B+" },
+      "EC8030": { "Course Title": "CMOS Memory Design", "Grade": "A+" },
+      "OE4M74": { "Course Title": "AI and ML for Engineering", "Grade": "A+" }
+    },
+    "spi": 9.2
+  },
+  "eighth_semester": {
+    "sem8_courses": {
+      "PR4001": { "Course Title": "Project Based Internship", "Grade": "9.4" },
+      "PC4004": { "Course Title": "Professional Development Course4", "Grade": "A+" }
+    },
+    "spi": 9.4
+  }
+}
+    },
+    "graduate": {
+      "degree": "Master of Science (MS)",
+      "major": "Applied Machine Learning",
+      "school": "University of Maryland, College Park",
+      "location": "College Park, Maryland, USA",
+      "program_duration": "August 2025 - Ongoing. Expected graduation date: May 2027",
+      "courses": {
+        "MSML601": {"title": "Probability & Statistics", "grade": "A+"},
+        "MSML602": {"title": "Principles of Data Science", "grade": "A+"},
+        "MSML603": {"title": "Principles of Machine Learning", "grade": "A+"}
+      },
+      "gpa": 4.0
+      }
+  },
+  "professional_experience": {
+    "company": "Big Vision LLC (Provides consulting services in AI, especially Computer Vision & Deep Learning)",
+    "title": "Machine Learning Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "duration": "6 months - January to July 2025",
+    "how I got the job": "On-campus placement. In the first round, we were given a Computer Vision project to do. Second round was a technical interview based on the project and my resume. Finally, a talk with the company Vice-President.",
+    "projects": [
+      "Designed and deployed a Retrieval-Augmented Generation (RAG) chatbot for an industrial IoT client, enabling natural-language search over product manuals and technical documentation.",
+      "Optimized an image similarity search pipeline on AWS ECS by replacing brute-force nearest-neighbor search with FAISS IVF-PQ, cutting system costs by 60% while maintaining retrieval quality.",
+      "Improved a U2Net-based Code 39 barcode decoder by fine-tuning with synthetic data and enhancing edge-detection algorithms, increasing robustness under low-contrast and distorted imaging conditions.",
+      "Elevated solar panel detection accuracy to 95% by enhancing a computer vision pipeline using YOLO-based detection and segmentation models plus a Hough line transform based post-processing step."
+    ]
+  },
+  "favorite":{
+    "food": "Dragon Chicken (It is a popular dish in the world of Indo-Chinese food (a fusion of Indian and Chinese cuisine). And for good reason - it's pretty epic! Crispy fried chicken strips, tossed in a spicy, sweet and sour sauce along with cashew nuts, capsicum, onion and chillies)",
+    "movie": "Oldboy (2003)",
+    "tv_series": ["Game of Thrones", "Dark", "12 Monkeys"],
+    "song": {
+      "title": "Andaz-e-Karam",
+      "artist": "Ustad Nusrat Fateh Ali Khan",
+      "language": "Urdu"
+    },
+    "artist": ["NF", "Ed Sheeran", "Central Cee", "Anuv Jain", "Bayaan", "Ustad Nusrat Fateh Ali Khan", "AR Rahman"],
+    "color": ["beige", "maroon", "black"],
+    "number": 7,
+    "sport": "tennis, cricket, soccer",
+    "sport_team": "Liverpool",
+    "person": "My Mom",
+    "fictional_character": "Tyrion Lannister",
+    "quote": "I drink and I know things - Tyrion Lannister"
+  },
+  "technical_skills": {
+    "Python ML Ecosystem": "PyTorch; TensorFlow; Keras; NumPy; Pandas; Scikit-learn; TensorBoard",
+    "Data Science & Analytics": "Descriptive, Inferential & Predictive Analysis; XGBoost/LightGBM/CatBoost; SQL",
+    "NLP & LLMs": "LangChain; NLTK; spaCy; Retrieval Evaluation (MRR/Recall@k); Agents; Ollama; OpenAI API; QLoRA",
+    "Computer Vision": "OpenCV; Augmentation Pipelines; YOLO; GAN; Diffusion models; Vision Transformers; DINO; CLIP",
+    "Reinforcement Learning/Preference Optimization": "MDP; TD Learning; REINFORCE; A2C; PPO; RLHF; DPO; RLAIF",
+    "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, AWS OpenSearch); Parallel Programming; Shell Scripting; MLflow; ONNX"
+  },
+  "projects":{
+    "Predicting Vehicle Fuel Economy from Technical Specifications (U.S. EPA Fuel Economy Dataset)": "• Built a multi-output CatBoost Regressor to estimate MPG/MPGe from pre-test vehicle specs (engine, drivetrain, body class, fuel-type), enabling early forecasting before costly and time-consuming city/highway certification testing. • Engineered 50+ model-ready features and benchmarked CatBoost against Random Forests and an ANN; CatBoost delivered the best generalization on unseen model years (test RMSE = 4.60, MAE = 1.40, R² = 0.94).",
+    "A Federated Learning Approach for Speech Anti-Spoofing and Deepfake Detection": "• Employed a wav2vec 2.0 frontend for feature extraction and a lightweight Multi-Scale Dilation Attention Network (MDAN) backend for multi-scale feature processing and classification. • Achieved 2.92% EER (equal error rate) and 0.2672 t-DCF (tandem detection cost function) on ASVspoof 2021 Logical Access and 2.99% EER on DeepFake partition, outperforming several centralized baselines.",
+    "Photo to Monet Style Art (Style Transfer)": "• Developed an unpaired image-to-image translation model, aimed at learning a mapping of images from a source domain to a target domain without the need of paired images from the two domains to train on. • Used Cycle – Generative Adversarial Network (CycleGAN) architecture."
+  },
+  "hobbies": "Playing the piano, pickleball, anything outdoors",
+  "places_visited":{
+    "India": ["Kerala", "Tamil Nadu", "Karnataka", "Telangana", "Madhya Pradesh", "Delhi"],
+    "UAE": ["Dubai", "Abu Dhabi", "Sharjah"],
+    "USA": ["Maryland", "Washington DC", "Florida", "West Virginia", "Ney York"]
+  },
+  "study_method": "Night before the exam. Coffee + No Sleep.",
+  "define_success": "Being happy with yourself",
+  "politics": "Libertarianism",
+  "links": {
+    "resume": "https://drive.google.com/file/d/1DhAt1MAUW0f0oz4w_IbtJuUS4Ya6eKZn/view?usp=sharing",
+    "transcript":{
+      "undergraduate": "https://drive.google.com/file/d/1xZzd7Eq8bkBgiSDFijcCuvTS1sihfdCD/view?usp=sharing",
+      "graduate": "https://drive.google.com/file/d/1dL0NeSUyxzT24Qo1hBEJ9yo7XLrZzxp7/view?usp=sharing"
+    },
+    "internship_completion_certificate": "https://drive.google.com/file/d/1QgttiNIowGhn3xQcpKaE9LSBDTip98uc/view?usp=sharing",
+    "github": "https://github.com/kytamnh",
+    "linkedin": "https://www.linkedin.com/in/ronak-vimal-2673a326a",
+    "google_scholar": "https://scholar.google.com/citations?hl=en&user=BLYb2EUAAAAJ"
+  }
+}

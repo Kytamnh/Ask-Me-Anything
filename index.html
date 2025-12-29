@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+          --peach-surface: #fde8e0;
+          --peach-fiber: #f7b49d;
+          --peach-shadow: #d69580;
+          --peach-highlight: #fff5f2;
+          --ink: #4a3731;
+          --soft-blur: 12px;
+      }
+
+      * {
+          box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+          background-color: var(--peach-surface);
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          color: var(--ink);
+          height: 100vh;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+      }
+
+      #root {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      /* Felt Texture Overlay */
+      .fiber-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 1000;
+          opacity: 0.3;
+          mix-blend-mode: overlay;
+      }
+
+      .stage {
+          width: 90vw;
+          max-width: 1100px;
+          height: 85vh;
+          display: grid;
+          grid-template-columns: 1fr 1.5fr;
+          gap: 40px;
+          position: relative;
+          z-index: 10;
+      }
+
+      /* Branding Section */
+      .branding {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 40px;
+          text-align: center;
+      }
+
+      .profile-frame {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 8px solid var(--peach-highlight);
+          box-shadow: 
+              0 20px 40px -10px rgba(214, 149, 128, 0.4),
+              inset 0 0 20px rgba(0,0,0,0.05);
+          overflow: hidden;
+          margin-bottom: 30px;
+          background: var(--peach-fiber);
+      }
+
+      .profile-frame img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+      }
+
+      .branding h1 {
+          font-weight: 800;
+          font-size: 2.5rem;
+          line-height: 1.1;
+          letter-spacing: -1px;
+          color: var(--ink);
+          margin-bottom: 10px;
+      }
+
+      .branding-contact {
+          font-size: 0.95rem;
+          color: rgba(74, 55, 49, 0.65);
+          margin: 0;
+          white-space: nowrap;
+      }
+
+      .branding-footer {
+          margin-top: auto;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          opacity: 0.6;
+          background: rgba(255,255,255,0.3);
+          padding: 8px 16px;
+          border-radius: 20px;
+      }
+
+      /* The Chat Well */
+      .chat-container {
+          background: var(--peach-highlight);
+          border-radius: 60px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 
+              0 40px 100px -20px rgba(214, 149, 128, 0.3),
+              inset 0 0 80px rgba(255, 255, 255, 0.8);
+          backdrop-filter: blur(var(--soft-blur));
+          border: 1px solid rgba(255,255,255,0.5);
+          overflow: hidden;
+          transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      .message-stream {
+          flex: 1;
+          padding: 60px 40px;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          scrollbar-width: none;
+      }
+
+      .message-stream::-webkit-scrollbar { display: none; }
+
+      .bubble {
+          max-width: 85%;
+          padding: 24px 32px;
+          border-radius: 40px;
+          font-size: 1rem;
+          line-height: 1.6;
+          position: relative;
+          animation: bubble-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          word-wrap: break-word;
+      }
+
+      .bubble.ai {
+          align-self: flex-start;
+          background: rgba(247, 180, 157, 0.15);
+          color: var(--ink);
+          border-bottom-left-radius: 10px;
+          box-shadow: 0 10px 30px rgba(214, 149, 128, 0.05);
+      }
+
+      .bubble.user {
+          align-self: flex-end;
+          background: var(--peach-fiber);
+          color: white;
+          border-bottom-right-radius: 10px;
+          box-shadow: 0 15px 45px rgba(247, 180, 157, 0.4);
+      }
+      
+      .bubble a {
+          color: #2563eb;
+          text-decoration: underline;
+          text-underline-offset: 4px;
+      }
+
+      .bubble h1,
+      .bubble h2,
+      .bubble h3,
+      .bubble h4,
+      .bubble h5,
+      .bubble h6 {
+          margin: 0 0 0.5em;
+          font-weight: 700;
+      }
+
+      .bubble h1 { font-size: 1.35rem; }
+      .bubble h2 { font-size: 1.2rem; }
+      .bubble h3 { font-size: 1.1rem; }
+      .bubble h4,
+      .bubble h5,
+      .bubble h6 { font-size: 1rem; }
+
+      .bubble p {
+          margin: 0 0 0.75em;
+      }
+
+      .bubble p:last-child {
+          margin-bottom: 0;
+      }
+
+      .bubble ul,
+      .bubble ol {
+          margin: 0 0 0.75em 1.25em;
+          padding: 0;
+      }
+
+      .bubble li {
+          margin: 0.2em 0;
+      }
+
+      .bubble code {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 0.95em;
+          background: rgba(0, 0, 0, 0.08);
+          padding: 2px 6px;
+          border-radius: 6px;
+      }
+
+      .bubble pre {
+          background: rgba(0, 0, 0, 0.08);
+          padding: 12px 14px;
+          border-radius: 12px;
+          overflow-x: auto;
+          margin: 0 0 0.75em;
+      }
+
+      .bubble pre code {
+          background: transparent;
+          padding: 0;
+      }
+
+      .bubble blockquote {
+          margin: 0 0 0.75em;
+          padding-left: 12px;
+          border-left: 3px solid var(--peach-shadow);
+          opacity: 0.9;
+      }
+
+      .input-region {
+          padding: 30px 40px 50px;
+          background: linear-gradient(to top, var(--peach-highlight) 60%, transparent);
+          z-index: 20;
+      }
+
+      .input-wrapper {
+          background: white;
+          padding: 8px 8px 8px 32px;
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          box-shadow: 0 20px 40px rgba(214, 149, 128, 0.15);
+          transition: box-shadow 0.3s ease;
+      }
+
+      .input-wrapper:focus-within {
+        box-shadow: 0 25px 50px rgba(214, 149, 128, 0.25);
+      }
+
+      .input-field {
+          flex: 1;
+          border: none;
+          background: transparent;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          font-size: 1rem;
+          color: var(--ink);
+          outline: none;
+          min-height: 24px;
+          max-height: 100px;
+          resize: none;
+          padding-top: 14px;
+          padding-bottom: 14px;
+      }
+
+      .input-field::placeholder {
+          color: var(--peach-shadow);
+          opacity: 0.6;
+      }
+
+      .send-btn {
+          width: 54px;
+          height: 54px;
+          border-radius: 50%;
+          background: var(--ink);
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          color: white;
+      }
+
+      .send-btn:hover:not(:disabled) {
+          transform: rotate(-15deg) scale(1.1);
+          background: var(--peach-fiber);
+      }
+      
+      .send-btn:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+      }
+
+      @keyframes bubble-up {
+          from { opacity: 0; transform: translateY(20px) scale(0.95); filter: blur(4px); }
+          to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+      }
+
+      @media (max-width: 900px) {
+          .stage {
+              grid-template-columns: 1fr;
+              grid-template-rows: auto 1fr;
+              height: 100vh;
+              width: 100vw;
+              gap: 0;
+          }
+          .branding {
+              padding: 20px;
+              height: auto;
+              flex-direction: row;
+              justify-content: space-between;
+              background: var(--peach-surface);
+          }
+          .profile-frame {
+              width: 60px;
+              height: 60px;
+              margin-bottom: 0;
+              border-width: 3px;
+              margin-right: 15px;
+          }
+          .profile-frame img {
+              object-fit: contain;
+              object-position: center;
+              background: var(--peach-fiber);
+          }
+          .branding h1 { 
+              font-size: 1.5rem; 
+              margin-bottom: 0;
+              text-align: left;
+          }
+          .branding-footer {
+              display: none;
+          }
+          .chat-container { 
+              border-radius: 40px 40px 0 0; 
+              height: 100%;
+          }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "groq-sdk": "https://esm.sh/groq-sdk@^0.37.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <!-- SVG Noise / Felt Texture -->
+    <svg class="fiber-overlay">
+        <filter id='feltNoise'>
+            <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch' />
+            <feColorMatrix type="saturate" values="0"/>
+        </filter>
+        <rect width='100%' height='100%' filter='url(#feltNoise)' />
+    </svg>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
