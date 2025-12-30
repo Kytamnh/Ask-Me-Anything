@@ -91,6 +91,7 @@ const PROFILE_KEY_PATHS = [
   "links.github",
   "links.linkedin",
   "links.google_scholar",
+  "summary_about_me"
 ] as const;
 const PROFILE_KEY_PATH_SET = new Set<string>(PROFILE_KEY_PATHS);
 
