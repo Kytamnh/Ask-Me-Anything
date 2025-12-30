@@ -1,5 +1,6 @@
 {
   "name": "Ronak Vimal",
+  "current_date": "January 2026",
   "email": "ronakvimal2003@gmail.com",
   "age": "22",
   "date_of_birth": "July 29, 2003",
@@ -32,7 +33,7 @@
       "major": "Electronics & Communication Engineering",
       "school": "Indian Institute of Information Technology (IIIT) Jabalpur",
       "location": "Jabalpur, Madhya Pradesh, India",
-      "program_duration": "December 2021 - June 2025",
+      "program_duration": "December 2021 - June 2025 (Completed/Graduated)",
       "cpi": 8.8,
       "courses": {
   "first_semester": {
@@ -145,7 +146,7 @@
     "company": "Big Vision LLC (Provides consulting services in AI, especially Computer Vision & Deep Learning)",
     "title": "Machine Learning Intern",
     "location": "Bengaluru, Karnataka, India",
-    "duration": "6 months - January to July 2025",
+    "duration": "6 months - January to July 2025 (Completed)",
     "how I got the job": "On-campus placement. In the first round, we were given a Computer Vision project to do. Second round was a technical interview based on the project and my resume. Finally, a talk with the company Vice-President.",
     "projects": [
       "Designed and deployed a Retrieval-Augmented Generation (RAG) chatbot for an industrial IoT client, enabling natural-language search over product manuals and technical documentation.",
