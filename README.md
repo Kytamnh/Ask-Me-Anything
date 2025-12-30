@@ -7,7 +7,7 @@ A single-page chat app that lets visitors ask questions about me (Ronak Vimal). 
 
 - React 19 + TypeScript
 - Vite 6
-- Groq SDK (model: `openai/gpt-oss-120b`)
+- Groq API (model: `openai/gpt-oss-120b`) via Cloudflare Pages Function
 - React Markdown + remark-gfm for rich message rendering
 - Lucide React for icons
 - Tailwind via CDN + custom CSS in `index.html`
@@ -20,20 +20,30 @@ A single-page chat app that lets visitors ask questions about me (Ronak Vimal). 
    `git clone <your-repo-url>`
 2. Install dependencies:
    `npm install`
-3. Create `.env.local` and add your Groq key:
+3. Create `.dev.vars` and add your Groq key (for local Pages Functions):
    `GROQ_API_KEY=your_groq_api_key_here`
 4. Update the profile data (used for personal Q&A):
    `data/profile.json`
 5. (Optional) Replace `profile.jpeg` and update the contact line in `App.tsx`.
-6. Start the dev server:
+6. Start the Vite dev server:
    `npm run dev`
-7. Open `http://localhost:3000` in your browser.
+7. In another terminal, start the Pages Functions proxy:
+   `npx wrangler pages dev --proxy 3000`
+8. Open `http://localhost:8788` in your browser.
 
 ## Build & Preview
 
 - `npm run build`
 - `npm run preview`
 
+## Deploy to Cloudflare Pages
+
+1. Create a new Cloudflare Pages project and connect this repo.
+2. Build command: `npm run build`
+3. Build output directory: `dist`
+4. Add `GROQ_API_KEY` in Project Settings -> Environment Variables (Production + Preview).
+5. Deploy. The API key stays server-side in `functions/api/chat.ts`.
+
 ## Notes
 
-- The app calls Groq directly from the browser, so keep your API key private and avoid deploying this without a server-side proxy if you need strict key security.
+- The browser only calls `/api/chat`; the Groq API key stays in Cloudflare Pages environment variables.
