@@ -52,6 +52,7 @@ const PROFILE_KEY_PATHS = [
   "email",
   "age",
   "date_of_birth",
+  "phone_number",
   "personality",
   "address",
   "family",
