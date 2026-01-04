@@ -183,9 +183,15 @@
     "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, AWS OpenSearch); Parallel Programming; Shell Scripting; MLflow; ONNX"
   },
   "projects":{
-    "Predicting Vehicle Fuel Economy from Technical Specifications (U.S. EPA Fuel Economy Dataset)": "• Built a multi-output CatBoost Regressor to estimate MPG/MPGe from pre-test vehicle specs (engine, drivetrain, body class, fuel-type), enabling early forecasting before costly and time-consuming city/highway certification testing. • Engineered 50+ model-ready features and benchmarked CatBoost against Random Forests and an ANN; CatBoost delivered the best generalization on unseen model years (test RMSE = 4.60, MAE = 1.40, R² = 0.94).",
-    "A Federated Learning Approach for Speech Anti-Spoofing and Deepfake Detection": "• Employed a wav2vec 2.0 frontend for feature extraction and a lightweight Multi-Scale Dilation Attention Network (MDAN) backend for multi-scale feature processing and classification. • Achieved 2.92% EER (equal error rate) and 0.2672 t-DCF (tandem detection cost function) on ASVspoof 2021 Logical Access and 2.99% EER on DeepFake partition, outperforming several centralized baselines.",
-    "Photo to Monet Style Art (Style Transfer)": "• Developed an unpaired image-to-image translation model, aimed at learning a mapping of images from a source domain to a target domain without the need of paired images from the two domains to train on. • Used Cycle – Generative Adversarial Network (CycleGAN) architecture."
+    "Predicting Vehicle Fuel Economy from Technical Specifications (U.S. EPA Fuel Economy Dataset)": {
+    "summary": "• Built a multi-output CatBoost Regressor to estimate MPG/MPGe from pre-test vehicle specs (engine, drivetrain, body class, fuel-type), enabling early forecasting before costly and time-consuming city/highway certification testing. • Engineered 50+ model-ready features and benchmarked CatBoost against Random Forests and an ANN; CatBoost delivered the best generalization on unseen model years (test RMSE = 4.60, MAE = 1.40, R² = 0.94).",
+    "link": "https://github.com/Kytamnh/Fuel-Economy_Prediction"},
+    "A Federated Learning Approach for Speech Anti-Spoofing and Deepfake Detection":{
+    "summary": "• Employed a wav2vec 2.0 frontend for feature extraction and a lightweight Multi-Scale Dilation Attention Network (MDAN) backend for multi-scale feature processing and classification. • Achieved 2.92% EER (equal error rate) and 0.2672 t-DCF (tandem detection cost function) on ASVspoof 2021 Logical Access and 2.99% EER on DeepFake partition, outperforming several centralized baselines.",
+    "link": "https://github.com/Kytamnh/Speech-DeepFake-Detection"},
+    "Photo to Monet Style Art (Style Transfer)":{
+    "summary": "• Developed an unpaired image-to-image translation model, aimed at learning a mapping of images from a source domain to a target domain without the need of paired images from the two domains to train on. • Used Cycle - Generative Adversarial Network (CycleGAN) architecture.",
+    "link": "https://github.com/Kytamnh/Photo-to-Monet_style_art"}
   },
   "hobbies": "Playing the piano, pickleball, anything outdoors",
   "places_visited":{
