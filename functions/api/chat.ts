@@ -53,6 +53,7 @@ const PROFILE_KEY_PATHS = [
   "age",
   "date_of_birth",
   "phone_number",
+  "pronouns",
   "personality",
   "address",
   "family",
