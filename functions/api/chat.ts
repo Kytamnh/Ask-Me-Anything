@@ -66,6 +66,8 @@ const PROFILE_KEY_PATHS = [
   "education.undergraduate",
   "education.graduate",
   "professional_experience",
+  "work_authorization",
+  "career_goals",
   "favorite.food",
   "favorite.movie",
   "favorite.tv_series",
@@ -78,11 +80,13 @@ const PROFILE_KEY_PATHS = [
   "favorite.person",
   "favorite.fictional_character",
   "favorite.quote",
+  "favorite.creator",
   "technical_skills",
   "projects",
   "hobbies",
   "places_visited",
   "study_method",
+  "preferred_work_style",
   "define_success",
   "politics",
   "links.resume",
@@ -92,6 +96,8 @@ const PROFILE_KEY_PATHS = [
   "links.github",
   "links.linkedin",
   "links.google_scholar",
+  "diet",
+  "travel_bucket_list",
   "summary_about_me"
 ] as const;
 const PROFILE_KEY_PATH_SET = new Set<string>(PROFILE_KEY_PATHS);

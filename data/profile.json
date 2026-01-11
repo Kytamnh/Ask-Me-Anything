@@ -156,6 +156,8 @@
       "Elevated solar panel detection accuracy to 95% by enhancing a computer vision pipeline using YOLO-based detection and segmentation models plus a Hough line transform based post-processing step."
     ]
   },
+  "work_authorization": "I'm eligible for CPT through my university for internships. After graduation, I'll have OPT for up to 3 years total (including the STEM extension). After OPT period, I would require H-1B sponsorship to continue working in USA.",
+  "career_goals": "I haven't thought too deeply about long-term goals, I tend to live more in the present. In the short term, I'm aiming for an ML R&D role where I can own practical, high-impact machine learning projects end-to-end, from ideation and experimentation to deployment and iteration.",
   "favorite":{
     "food": "Dragon Chicken (It is a popular dish in the world of Indo-Chinese food (a fusion of Indian and Chinese cuisine). And for good reason - it's pretty epic! Crispy fried chicken strips, tossed in a spicy, sweet and sour sauce along with cashew nuts, capsicum, onion and chillies)",
     "movie": "Oldboy (2003)",
@@ -171,8 +173,9 @@
     "sport": "tennis, cricket, soccer",
     "sport_team": "Liverpool",
     "person": "My Mom",
-    "fictional_character": "Tyrion Lannister",
-    "quote": "I drink and I know things - Tyrion Lannister"
+    "fictional_character": "Tyrion Lannister from Game of Thrones",
+    "quote": "I drink and I know things - Tyrion Lannister",
+    "creator": "Kevin Langue. He is a French-American comedian that hosts the 'The Kevin Langue Show' on Youtube."
   },
   "technical_skills": {
     "Python ML Ecosystem": "PyTorch; TensorFlow; Keras; NumPy; Pandas; Scikit-learn; TensorBoard",
@@ -200,6 +203,7 @@
     "USA": ["Maryland", "Washington DC", "Florida", "West Virginia", "Ney York"]
   },
   "study_method": "Night before the exam. Coffee + No Sleep.",
+  "preferred_work_style": "I like to take ownership as a leader and drive projects end-to-end. I value frequent, direct feedback and use it to iterate fast. My work style is typically high-energy bursts; when a deadline is close, I'll often work through the night and I don't really let go until I'm satisfied with the result.",
   "define_success": "Being happy with yourself",
   "politics": "Libertarianism",
   "links": {
@@ -213,5 +217,7 @@
     "linkedin": "https://www.linkedin.com/in/ronak-vimal-2673a326a",
     "google_scholar": "https://scholar.google.com/citations?hl=en&user=BLYb2EUAAAAJ"
   },
+  "diet": "For breakfast, I usually have oats and eggs. For dinner, I rotate between: (1) salad + chicken, (2) canned beans, or (3) noodles. I snack on fruit—usually bananas, apples, or oranges—whenever I feel like it.",
+  "travel_bucket_list": "Netherlands, Brazil, Pakistan",
   "summary_about_me": "I'm Ronak Vimal, a 22-year-old from Kerala, India currently based in College Park, Maryland, USA pursuing an MS in Applied Machine Learning at the University of Maryland. I love to connect with new people and keep growing. Professionally, I worked as a Machine Learning Intern at Big Vision LLC (Bengaluru), where I built practical AI solutions. My interests sit at the intersection of machine learning, computer vision, and MLOps, and I enjoy building systems that actually work end-to-end. Outside work, I'm into piano, pickleball, and basically anything outdoors. My idea of success is simple: being happy with myself."
 }
