@@ -176,7 +176,7 @@
     "person": "My Mom",
     "fictional_character": "Tyrion Lannister from Game of Thrones",
     "quote": "I drink and I know things - Tyrion Lannister",
-    "creator": "Kevin Langue. He is a French-American comedian that hosts the 'The Kevin Langue Show' on Youtube."
+    "content_creator": "Kevin Langue. He is a French-American comedian that hosts the 'The Kevin Langue Show' on Youtube."
   },
   "technical_skills": {
     "Python ML Ecosystem": "PyTorch; TensorFlow; Keras; NumPy; Pandas; Scikit-learn; TensorBoard",

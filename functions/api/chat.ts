@@ -81,7 +81,7 @@ const PROFILE_KEY_PATHS = [
   "favorite.person",
   "favorite.fictional_character",
   "favorite.quote",
-  "favorite.creator",
+  "favorite.content_creator",
   "technical_skills",
   "projects",
   "hobbies",
