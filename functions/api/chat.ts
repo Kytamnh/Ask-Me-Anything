@@ -55,6 +55,8 @@ const PROFILE_KEY_PATHS = [
   "phone_number",
   "pronouns",
   "personality",
+  "strengths",
+  "weaknesses",
   "address",
   "family",
   "hometown",
