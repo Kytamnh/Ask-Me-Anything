@@ -189,6 +189,10 @@
     "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, AWS OpenSearch); Parallel Programming; Shell Scripting; MLflow; ONNX"
   },
   "projects":{
+    "Ask-Me-Anything Personal AI (Fact-Grounded Q&A Chat App)":{
+    "summary": "• Built a React 19 + TypeScript + Vite single-page chat app with a Cloudflare Pages Function backend, using Groq's OpenAI-compatible API (gpt-oss-120b) for low-latency responses. • Implemented a two-stage router: an intent classifier flags personal questions and the backend enforces a get_profile_info call to profile.json (answers limited to retrieved data); general queries can bypass the tool. • This is the bot you are talking to right now :)",
+    "link": "https://github.com/Kytamnh/Ask-Me-Anything"
+    },
     "Predicting Vehicle Fuel Economy from Technical Specifications (U.S. EPA Fuel Economy Dataset)": {
     "summary": "• Built a multi-output CatBoost Regressor to estimate MPG/MPGe from pre-test vehicle specs (engine, drivetrain, body class, fuel-type), enabling early forecasting before costly and time-consuming city/highway certification testing. • Engineered 50+ model-ready features and benchmarked CatBoost against Random Forests and an ANN; CatBoost delivered the best generalization on unseen model years (test RMSE = 4.60, MAE = 1.40, R² = 0.94).",
     "link": "https://github.com/Kytamnh/Fuel-Economy_Prediction"},
@@ -210,7 +214,7 @@
   "define_success": "Being happy with yourself",
   "politics": "Libertarianism",
   "links": {
-    "resume": "https://drive.google.com/file/d/1DhAt1MAUW0f0oz4w_IbtJuUS4Ya6eKZn/view?usp=sharing",
+    "resume": "https://drive.google.com/file/d/1dvkaBD35lW2inKa6LtupLl_7KeCPUMtC/view?usp=sharing",
     "transcript":{
       "undergraduate": "https://drive.google.com/file/d/1xZzd7Eq8bkBgiSDFijcCuvTS1sihfdCD/view?usp=sharing",
       "graduate": "https://drive.google.com/file/d/1dL0NeSUyxzT24Qo1hBEJ9yo7XLrZzxp7/view?usp=sharing"
