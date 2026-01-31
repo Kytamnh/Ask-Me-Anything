@@ -181,12 +181,12 @@
     "content_creator": "Kevin Langue. He is a French-American comedian that hosts the 'The Kevin Langue Show' on Youtube."
   },
   "technical_skills": {
-    "Python ML Ecosystem": "PyTorch; TensorFlow; Keras; NumPy; Pandas; Scikit-learn; TensorBoard",
+    "Python ML Ecosystem": "PyTorch; TensorFlow; NumPy; Pandas; Scikit-learn; TensorBoard",
     "Data Science & Analytics": "Descriptive, Inferential & Predictive Analysis; XGBoost/LightGBM/CatBoost; SQL",
     "NLP & LLMs": "LangChain; NLTK; spaCy; Retrieval Evaluation (MRR/Recall@k); Agents; Ollama; OpenAI API; QLoRA",
     "Computer Vision": "OpenCV; Augmentation Pipelines; YOLO; GAN; Diffusion models; Vision Transformers; DINO; CLIP",
     "Reinforcement Learning/Preference Optimization": "MDP; TD Learning; REINFORCE; A2C; PPO; RLHF; DPO; RLAIF",
-    "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, AWS OpenSearch); Parallel Programming; Shell Scripting; MLflow; ONNX"
+    "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, pgvector + PostgreSQL, AWS OpenSearch); MLFlow; ONNX"
   },
   "projects":{
     "Ask-Me-Anything Personal AI (Fact-Grounded Q&A Chat App)":{
@@ -202,6 +202,34 @@
     "Photo to Monet Style Art (Style Transfer)":{
     "summary": "• Developed an unpaired image-to-image translation model, aimed at learning a mapping of images from a source domain to a target domain without the need of paired images from the two domains to train on. • Used Cycle - Generative Adversarial Network (CycleGAN) architecture.",
     "link": "https://github.com/Kytamnh/Photo-to-Monet_style_art"}
+  },
+  "research_publications":{
+
+  "A novel compression method for Vectorcardiogram signal using hybrid autoencoder model": {
+    "Authors": "Ronak Vimal, Anil Kumar, Aditya Tiwari",
+    "Link": "https://www.sciencedirect.com/science/article/abs/pii/S1746809425013072"
+  },
+  "A new VCG signal compression technique based on discrete Karhunen-Loeve expansion and tunable quality wavelet transform": {
+    "Authors": "Ronak Vimal, A Kumar, Aditya Tiwari",
+    "Link": "https://www.sciencedirect.com/science/article/abs/pii/S0022073625000226"
+  },
+  "An automatic nuclei segmentation technique using unsharp masking": {
+    "Authors": "Shivam Mishra, Amit Vishwakarma, Anil Kumar, Ronak Vimal",
+    "Link": "https://ieeexplore.ieee.org/abstract/document/10402200"
+  },
+  "Reconstruction of Compressed VCG Signal using Cubic Spline Interpolation": {
+    "Authors": "Aditya Tiwari, Ronak Vimal, A Kumar",
+    "Link": "https://www.worldscientific.com/doi/abs/10.1142/S0218126626501082"
+  },
+  "Automated Nuclei Segmentation Using Shearlet Based Unsharp Masking": {
+    "Authors": "Shivam Mishra, Amit Vishwakarma, Ronak Vimal, Anil Kumar",
+    "Link": "https://ieeexplore.ieee.org/abstract/document/10969034"
+  },
+  "Compression and Reconstruction of VCG Signal Based on DCT and Nearest Neighbour Interpolation": {
+    "Authors": "Aditya Tiwari, Ronak Vimal, A Kumar",
+    "Link": "https://ieeexplore.ieee.org/abstract/document/10899692"
+  }
+
   },
   "hobbies": "Playing the piano, pickleball, anything outdoors",
   "places_visited":{
@@ -226,5 +254,5 @@
   },
   "diet": "For breakfast, I usually have oats and eggs. For dinner, I rotate between: (1) salad + chicken, (2) canned beans, or (3) noodles. I snack on fruit—usually bananas, apples, or oranges—whenever I feel like it.",
   "travel_bucket_list": "Netherlands, Brazil, Pakistan",
-  "summary_about_me": "I'm Ronak Vimal, a 22-year-old from Kerala, India currently based in College Park, Maryland, USA pursuing an MS in Applied Machine Learning at the University of Maryland. I love to connect with new people and keep growing. Professionally, I worked as a Machine Learning Intern at Big Vision LLC (Bengaluru), where I built practical AI solutions. My interests sit at the intersection of machine learning, computer vision, and MLOps, and I enjoy building systems that actually work end-to-end. Outside work, I'm into piano, pickleball, and basically anything outdoors. My idea of success is simple: being happy with myself."
+  "about_me_summary": "I'm Ronak Vimal, a 22-year-old from Kerala, India currently based in College Park, Maryland, USA pursuing an MS in Applied Machine Learning at the University of Maryland. I love to connect with new people and keep growing. Professionally, I worked as a Machine Learning Intern at Big Vision LLC (Bengaluru), where I built practical AI solutions. My interests sit at the intersection of machine learning, computer vision, and MLOps, and I enjoy building systems that actually work end-to-end. Outside work, I'm into piano, pickleball, and basically anything outdoors. My idea of success is simple: being happy with myself."
 }

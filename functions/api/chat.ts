@@ -86,6 +86,7 @@ const PROFILE_KEY_PATHS = [
   "favorite.content_creator",
   "technical_skills",
   "projects",
+  "research_publications",
   "hobbies",
   "places_visited",
   "study_method",
@@ -101,7 +102,7 @@ const PROFILE_KEY_PATHS = [
   "links.google_scholar",
   "diet",
   "travel_bucket_list",
-  "summary_about_me"
+  "about_me_summary"
 ] as const;
 const PROFILE_KEY_PATH_SET = new Set<string>(PROFILE_KEY_PATHS);
 
