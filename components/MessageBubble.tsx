@@ -9,6 +9,10 @@ interface MessageBubbleProps {
 
 export const MessageBubble: React.FC<MessageBubbleProps> = ({ message }) => {
   const isUser = message.role === Role.USER;
+  const normalizedContent = message.content.replace(
+    /<br\s*\/?>/gi,
+    '  \n'
+  );
 
   return (
     <div className={`bubble ${isUser ? 'user' : 'ai'}`}>
@@ -20,7 +24,7 @@ export const MessageBubble: React.FC<MessageBubbleProps> = ({ message }) => {
           ),
         }}
       >
-        {message.content}
+        {normalizedContent}
       </ReactMarkdown>
     </div>
   );
