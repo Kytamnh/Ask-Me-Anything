@@ -1,7 +1,7 @@
 {
   "name": "Ronak Vimal",
-  "current_date": "January 2026",
-  "email": "ronakvimal2003@gmail.com",
+  "current_date": "February 2026",
+  "email": "ronakvimal2003@gmail.com, ronakv@umd.edu",
   "age": "22",
   "date_of_birth": "July 29, 2003",
   "phone_number": "+1 (516) 789-7228",
@@ -13,6 +13,8 @@
   "Enthusiastic, creative, sociable, empathetic, idealistic, and focused on possibilities and personal growth.",
   "Deep emotional depth, high adaptability, strong communication, and a powerful drive for improvement, often making them great friends and motivators",
   "Can struggle with insecurity, people-pleasing, codependency, and overthinking, especially in relationships"],
+  "fun_fact": "I laugh at the most random, obscure things. A perfectly crafted, well-thought-out joke might not even get a smile out of me—but chaotic, low-effort shitposting and absurd humor somehow gets me every time.",
+  "values": "Being true to myself, building a life that feels free and self-directed, staying open to trying new things, and genuinely listening to other people's perspectives—even when I don't agree.",
   "strengths": ["Fast learner & adaptable: I ramp up quickly and stay effective when priorities change.", "Problem-solver: I break ambiguous problems into actionable steps and execute."],
   "weaknesses": ["Overcommitting: I sometimes take on too much; I'm improving by prioritizing and setting clearer boundaries.", "Overly concerned with others' opinions: I sometimes spend too much energy worrying about how I'm perceived; I'm working on focusing more on impact and clear feedback over assumptions."],
   "address": "4700 Berwyn House Rd, College Park, Maryland, USA. Zip Code: 20740",
@@ -146,9 +148,10 @@
       "gpa": 4.0
       }
   },
-  "professional_experience": {
-    "company": "Big Vision LLC (Provides consulting services in AI, especially Computer Vision & Deep Learning)",
-    "title": "Machine Learning Intern",
+  "work_experience": {
+    "Big Vision LLC":{
+    "about_company": " Provides consulting services in AI, especially Computer Vision & Deep Learning.",
+    "role": "Machine Learning Intern",
     "location": "Bengaluru, Karnataka, India",
     "duration": "6 months - January to July 2025 (Completed)",
     "how I got the job": "On-campus placement. In the first round, we were given a Computer Vision project to do. Second round was a technical interview based on the project and my resume. Finally, a talk with the company Vice-President.",
@@ -159,6 +162,14 @@
       "Elevated solar panel detection accuracy to 95% by enhancing a computer vision pipeline using YOLO-based detection and segmentation models plus a Hough line transform based post-processing step."
     ]
   },
+"STORM Research Group, UMD":{
+  "role": "Research Assistant",
+  "location": "College Park, Maryland, USA",
+  "duration": "January 2026 - Present",
+  "advisor": "Can Firtina (Assistant Professor at UMD)",
+  "project": "Optimizing RawHash for real-time nanopore analysis by mapping raw 'squiggle' signals directly to a reference genome (without basecalling) to enable selective basecalling of informative reads, reducing downstream compute and improving throughput."
+}
+},
   "work_authorization": "I'm eligible for CPT through my university for internships. After graduation, I'll have OPT for up to 3 years total (including the STEM extension). After OPT period, I would require H-1B sponsorship to continue working in USA.",
   "career_goals": "I haven't thought too deeply about long-term goals, I tend to live more in the present. In the short term, I'm aiming for an ML R&D role where I can own practical, high-impact machine learning projects end-to-end, from ideation and experimentation to deployment and iteration.",
   "favorite":{
@@ -181,9 +192,9 @@
     "content_creator": "Kevin Langue. He is a French-American comedian that hosts the 'The Kevin Langue Show' on Youtube."
   },
   "technical_skills": {
-    "Python ML Ecosystem": "PyTorch; TensorFlow; NumPy; Pandas; Scikit-learn; TensorBoard",
-    "Data Science & Analytics": "Descriptive, Inferential & Predictive Analysis; XGBoost/LightGBM/CatBoost; SQL",
-    "NLP & LLMs": "LangChain; NLTK; spaCy; Retrieval Evaluation (MRR/Recall@k); Agents; Ollama; OpenAI API; QLoRA",
+    "Core ML Stack (Python)": "PyTorch; TensorFlow; NumPy; Pandas; Scikit-learn; TensorBoard",
+    "Data Science & Analytics": "Hypothesis Testing, Feature Engineering, Decision Trees, Gradient Boosting, SQL",
+    "NLP & LLM Tooling": "LangChain; NLTK; spaCy; Retrieval Evaluation (MRR/Recall@k); Agents; Ollama; OpenAI API; QLoRA",
     "Computer Vision": "OpenCV; Augmentation Pipelines; YOLO; GAN; Diffusion models; Vision Transformers; DINO; CLIP",
     "Reinforcement Learning/Preference Optimization": "MDP; TD Learning; REINFORCE; A2C; PPO; RLHF; DPO; RLAIF",
     "MLOps & Deployment": "Docker; CI/CD (Bitbucket, GitHub Actions); AWS; FastAPI; Flask; Vector DBs (Chroma, Pinecone, Milvus, pgvector + PostgreSQL, AWS OpenSearch); MLFlow; ONNX"
@@ -231,6 +242,11 @@
   }
 
   },
+  "challenges_faced": {
+  "in_life": "I've often been overly concerned with what others think—second-guessing my choices, replaying conversations, and sometimes holding back from speaking up because I wanted to be 'liked' or seen as competent. I'm actively improving by separating feedback from approval, reminding myself that discomfort is part of growth, and focusing on what I can control: effort, integrity, and learning. I also practice small, consistent actions—sharing my opinion even when I'm unsure, asking questions sooner, and reflecting on outcomes instead of imagined judgments. Over time, this has made me more confident and more authentic in both personal and professional settings.",
+  "in_work": "One challenge I faced was while elevating solar panel detection accuracy to 95% by enhancing a computer vision pipeline using YOLO-based detection and segmentation models plus a Hough line transform-based post-processing step. The Hough transform stage became tricky because it introduced many parameters to tune (thresholds, angle ranges, line filtering rules), and the setup that worked well on one dataset didn't generalize reliably to others—especially when panels appeared at different angles or when images had varying levels and types of noise. After several rounds of fragile, dataset-specific tuning, I stepped back and took advice from a senior colleague: define objective, measurable criteria for what 'good lines' look like; sweep parameters systematically instead of tweaking by intuition; and add normalization and adaptive thresholds based on image characteristics. I also made the post-processing more robust by using the model outputs (segmentation/detection confidence and geometry) to constrain the Hough search space, adding sanity checks and fallback logic for edge cases. That combination—structured experimentation, adaptive parameterization, and guidance from my senior—turned the post-processing from a brittle step into something that generalized far better across datasets."
+},
+  "learning_now": "I'm currently learning about reinforcement learning and preference optimization—focusing on how agents learn through interaction, and how preference-based methods (like reward modeling and RLHF-style approaches) can align model behavior with human feedback.",
   "hobbies": "Playing the piano, pickleball, anything outdoors",
   "places_visited":{
     "India": ["Kerala", "Tamil Nadu", "Karnataka", "Telangana", "Madhya Pradesh", "Delhi"],
