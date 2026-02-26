@@ -2,7 +2,7 @@
 
 A single-page chat app that lets visitors ask questions about me (Ronak Vimal). The UI presents a profile panel on the left and a chat interface on the right. Under the hood, the app calls Groq's LLM twice per user message: first to classify intent, then to answer. Personal questions must use tool calling to fetch facts from `data/profile.json`, while non-personal questions are answered directly by the model. Messages render with Markdown and GitHub-flavored Markdown support.
 
-Live URL: `https://ama-ronak.pages.dev/`
+Live URL: [https://ama-ronak.pages.dev/](https://ama-ronak.pages.dev/)
 
 ## Tech Stack
 
