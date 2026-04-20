@@ -611,3 +611,10 @@ npx wrangler pages deploy dist --project-name ama-ronak
 - Repository metadata such as stars, forks, primary language, repo description, and recent commits is not fetched yet.
 - Repo evidence selection can mark evidence insufficient even when one file is fetched, especially for broad repo-overview questions.
 - `MemorySaver` stores state in the running Worker process memory, so it is not durable across Cloudflare isolate/process restarts.
+
+<img width="1470" height="956" alt="Screenshot 2026-04-19 at 10 54 04 PM" src="https://github.com/user-attachments/assets/55f1d85a-32a0-47be-a145-fb7653383231" />  
+<img width="1470" height="956" alt="Screenshot 2026-04-19 at 10 54 20 PM" src="https://github.com/user-attachments/assets/ba700537-65e8-4856-9009-6a91da44c6aa" />
+<img width="1470" height="956" alt="Screenshot 2026-04-19 at 10 54 29 PM" src="https://github.com/user-attachments/assets/718588f5-c2fa-478c-b469-38005aebaaa6" />  
+<img width="1470" height="956" alt="Screenshot 2026-04-20 at 3 59 49 AM" src="https://github.com/user-attachments/assets/60c557c2-036d-451e-86d2-c75c80c9a31a" />
+
+
