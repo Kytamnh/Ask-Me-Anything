@@ -7,14 +7,21 @@ type ChatResponse = {
 
 export const sendMessageToGroq = async (
   history: Message[],
-  newMessage: string
+  newMessage: string,
+  threadId: string,
+  debug = false
 ): Promise<string> => {
   const response = await fetch("/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ history, newMessage }),
+    body: JSON.stringify({
+      history,
+      newMessage,
+      threadId,
+      ...(debug ? { debug: true } : {}),
+    }),
   });
 
   const payload = (await response.json().catch(() => null)) as ChatResponse | null;

@@ -4,7 +4,21 @@ import { sendMessageToGroq } from './services/groqService';
 import { MessageBubble } from './components/MessageBubble';
 import { ChatInput } from './components/ChatInput';
 
+const createThreadId = () => {
+  if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+};
+
+const isDebugModeEnabled = () => {
+  if (typeof window === 'undefined') return false;
+  return new URLSearchParams(window.location.search).get('debug') === 'true';
+};
+
 const App: React.FC = () => {
+  const [threadId] = useState(createThreadId);
+  const [debugMode] = useState(isDebugModeEnabled);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 'welcome-msg',
@@ -41,7 +55,12 @@ const App: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const responseText = await sendMessageToGroq(messages, text);
+      const responseText = await sendMessageToGroq(
+        messages,
+        text,
+        threadId,
+        debugMode
+      );
 
       const newBotMessage: Message = {
         id: (Date.now() + 1).toString(),
